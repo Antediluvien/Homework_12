@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Starter HTML</title>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <!-- YOUR CUSTOM STYLESHEETS GO HERE -->
+
+</head>
+
+<body>
+
+<!----------------------------------------NAV BAR SHIT START----------------------------------------------------------->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-right">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">Home</a>
+
+    <!-- Links -->
+    <ul class="nav navbar-nav mr-auto"></ul>
+    <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Latitude Vs.
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="plots_1.html">Max Temp</a>
+                <a class="dropdown-item" href="plots_2.html">Humidity</a>
+                <a class="dropdown-item" href="plots_3.html">Cloudiness</a>
+                <a class="dropdown-item" href="plots_4.html">Windspeed</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<!----------------------------------------NAV BAR END------------------------------------------------------------->
+<!----------------------------------------JUMBOTRON START--------------------------------------------------------->
+<div class="jumbotron text-left font-color  background-color p-3">
+    <h1>Latitude Vs. Maximum Temperature</h1>
+</div>
+
+<!----------------------------------------JUMBOTRON END----------------------------------------------------------->
+</body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col bg-light">
+            <img src="images/Fig1.png" height="550" width="800"/>
+            The purpose of this projet was to analyze how weather changes as you get close to the equator.
+            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to asssemble a
+            dataset on over 500 cities. <br>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude.
+            Factors we looked at included: temperature, cloudiness,windspeed, and humidity. This site provides
+            the source data and visualizations created as part of the analysis, as well as explanations and descriptions
+            of any trends and correlations witnessed..
+        </div>
+        <div class="col bg-blue">
+            <a href="plots_1.html">
+                <button type="button" class="btn btn-outline-primary">
+                    <img src="images/Fig1.png" height="300" width="300">
+                </button>
+            </a>
+            <a href="plots_2.html">
+                <button type="button" class="btn btn-outline-primary">
+                    <img src="images/Fig2.png" height="300" width="300">
+                </button>
+            </a>
+            <a href="plots_3.html">
+                <button type="button" class="btn btn-outline-primary">
+                    <img src="images/Fig3.png" height="300" width="300">
+                </button>
+            </a>
+            <a href="plots_4.html">
+                <button type="button" class="btn btn-outline-primary">
+                    <img src="images/Fig4.png" height="300" width="300">
+                </button>
+            </a>
+
+        </div>
+
+
+
+    </div>
+
+<style>
+    .font-color {
+        color: #0a32ff;
+    }
+
+    .background-color {
+        background-color: #9c9c9c; /*#ffe6ad*/
+    }
+
+</style>
+
+</div>
+
+
+</html>
