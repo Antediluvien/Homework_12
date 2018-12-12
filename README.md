@@ -1,1 +1,1 @@
-# Homework_12
+After doing some data analysis for a previous project(Weather-Analysis).  I created a dashboard to easily view the png files of how latitude correlates with factors such as heat, windspeed, cloudiness and humidity.
